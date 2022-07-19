@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="card.css">
+</head>
+
+<body>
+<table class="center">
+	<div class="Txt">
+		<b>User Profile Card</b>
+	</div>
+	<center><img src="https://avatars.githubusercontent.com/u/62527607?v=4">
+	</center>
+	<div class="Txt">
+		<small><b>Sochongt 42</small></b>
+	</div>
+	<center>Level 19 Nail clipper</center>
+	<tr>
+		<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/934px-Twitter-logo.svg.png" alt="1" style="width:50px;height:50px;" /></td>
+		<td><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png?w=360" alt="1" style="width:50px;height:50px;" /></td>
+		<td><img src="https://brandlogos.net/wp-content/uploads/2021/11/discord-logo.png" alt="1" style="width:50px;height:50px;" /></td>
+		
+	</tr>
+
+	
+
+</table>
+
+
+	<center><a onclick="gfg_Run()" class="button">Click me</a></center>
+
+	<script>
+		function changeColor(color) {
+			document.body.style.background = color;
+		}
+		a = 0;
+		function gfg_Run() {
+			changeColor('#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0'));
+			a = a + 1;
+			switch(a){
+				case 8:
+					alert("R u sure about dat?");
+					break;
+				case 10:
+					document.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+					break;
+			}
+		}         
+	</script> 
+
+
+</body>
+
+</html>

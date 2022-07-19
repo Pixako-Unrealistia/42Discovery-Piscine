@@ -1,0 +1,28 @@
+table, th, td {
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-right: 30px;
+  border-collapse: collapse;
+  
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.Txt {
+	font-size: 48px;
+	text-align: center;
+}
+
+.button {
+  background-color: #232C7A;
+  color: white;
+  border: dotted;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 16px;
+  position: center;
+  display: inline-block;
+}

@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+.praisebetow3school {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.a {
+  background-color: #fcd4d4;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  flex: 50%;
+}
+
+.b {
+  background-color: #ccd4d4;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .praisebetow3school {
+	flex-direction: column;
+  }
+}

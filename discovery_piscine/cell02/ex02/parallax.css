@@ -1,0 +1,57 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  color: #777;
+}
+
+.img1, .img2 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.img1 {
+  background-image: url("https://i.ytimg.com/vi/MJbE3uWN9vE/maxresdefault.jpg");
+  min-height: 100%;
+}
+
+.img2 {
+  background-image: url("https://i.makeagif.com/media/1-03-2017/k0kFcu.gif");
+  min-height: 100%;
+}
+
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+
+}
+
+.caption span.border {
+  background-color: transparent;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.seperator {
+	color: #777;
+	background-color:black;
+	text-align:center;
+	padding:50px 80px;
+	text-align: justify;
+}
+
