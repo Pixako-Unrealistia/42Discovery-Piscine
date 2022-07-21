@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+<style>
+	.circle {
+	height: 200px;
+	width:200px;
+	background-color: red;
+	border-radius: 50%;
+	display: inline-block;
+	}
+	
+</style>
+
+<div style="text-align:center">
+  <span class="circle" id ="Cir" onclick="composite()" onmouseleave="decomp()"></span>
+</div>
+
+	<script>
+		varri = 200;
+		Rvar = 5;
+		brute = ["green","blue","red"];
+		
+		function decomp(){
+			if (varri >= 200) {
+				varri -= 5;
+				document.getElementById("Cir").style.height = varri + "px";
+				document.getElementById("Cir").style.width = varri + "px";
+			}
+		}
+		
+		function composite(){
+				
+				if (varri <= 420) {
+				varri += 10;
+				document.getElementById("Cir").style.height = varri + "px";
+				document.getElementById("Cir").style.width = varri + "px";
+				document.getElementById("Cir").style.backgroundColor = brute[varri%3];
+				}
+				else
+				{
+					varri = 200;
+					document.getElementById("Cir").style.height = varri + "px";
+					document.getElementById("Cir").style.width = varri + "px";
+					document.getElementById("Cir").style.backgroundColor = "red";
+					Rvar = Rvar - 1;
+					if (Rvar == 0)
+					{
+						document.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+					}
+				}
+		}
+	</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="backgroound.css">
+</head>
+<body>
+
+	<a onclick="gfg_Run()" class="button">Click me</a>
+	
+	
+	<script>
+
+		function changeColor(color) {
+			document.body.style.background = color;
+		}
+		a = 0;
+		function gfg_Run() {
+			changeColor('#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0'));
+			a = a + 1;
+			if (a == 10)
+			{
+				document.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+			}
+		}    
+	</script> 
+
+</body>
+</html>

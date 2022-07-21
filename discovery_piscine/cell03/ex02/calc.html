@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<form onsubmit="composite()">
+  <label for="fname">First  Value:</label>
+  <input type="text" id="fval"><br><br>
+  <label for="lname">Second Value:</label>
+  <input type="text" id="sval"><br><br>
+  
+  <input type="radio" name="operation:" value="Plus" onclick="compose(this.value)">Plus<br>
+  <input type="radio" name="operation:" value="Minus" onclick="compose(this.value)">Minus<br>
+  <input type="radio" name="operation:" value="Multiply" onclick="compose(this.value)">Multiply<br>
+  <input type="radio" name="operation:" value="Divide" onclick="compose(this.value)">Divide<br>
+  <input type="radio" name="operation:" value="Modulo" onclick="compose(this.value)">Modulo<br><br>
+  
+  <input type="submit" value="Try me">
+
+</form>
+
+	<script>
+		var regeant = 0;
+		function compose(operand) {
+			switch (operand)
+			{
+			case "Plus":
+				regeant = document.getElementById('fval').value + document.getElementById('sval').value;
+				break;
+			case "Minus":
+				regeant = document.getElementById('fval').value - document.getElementById('sval').value;
+				break;
+			case "Multiply":
+				regeant = document.getElementById('fval').value * document.getElementById('sval').value;
+				break;
+			case "Divide":
+				if (document.getElementById('sval').value == 0)
+				{
+					regeant = "It's over 9000!"
+					break;
+				}
+				regeant = document.getElementById('fval').value / document.getElementById('sval').value;
+				break;
+			case "Modulo":
+				if (document.getElementById('sval').value == 0)
+				{
+					regeant = "It's over 9000!"
+					break;
+				}
+				regeant = document.getElementById('fval').value % document.getElementById('sval').value;
+				break;
+				
+			}
+		}
+		function composite() {
+				//document.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+				console.log(regeant);
+				alert(regeant);
+		} 
+		
+		setInterval(() => {
+		alert("Please, use me...");
+		}, 30000);
+		
+		
+	</script>
+
+<html>

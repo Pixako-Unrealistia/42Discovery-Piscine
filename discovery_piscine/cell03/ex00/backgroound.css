@@ -1,0 +1,13 @@
+.button {
+  background-color: #232C7A;
+  color: white;
+  border: dotted;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  font-size: 16px;
+  position: jusify;
+  display: inline-block;
+}
+
