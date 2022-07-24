@@ -29,29 +29,29 @@
 			switch (operand)
 			{
 			case "Plus":
-				regeant = document.getElementById('fval').value + document.getElementById('sval').value;
+				regeant = parseInt(document.getElementById('fval').value) + parseInt(document.getElementById('sval').value);
 				break;
 			case "Minus":
-				regeant = document.getElementById('fval').value - document.getElementById('sval').value;
+				regeant = parseInt(document.getElementById('fval').value) - parseInt(document.getElementById('sval').value);
 				break;
 			case "Multiply":
-				regeant = document.getElementById('fval').value * document.getElementById('sval').value;
+				regeant = parseInt(document.getElementById('fval').value) * parseInt(document.getElementById('sval').value);
 				break;
 			case "Divide":
-				if (document.getElementById('sval').value == 0)
+				if (document.getElementById('sval').value == "0")
 				{
 					regeant = "It's over 9000!"
 					break;
 				}
-				regeant = document.getElementById('fval').value / document.getElementById('sval').value;
+				regeant = parseInt(document.getElementById('fval').value) / parseInt(document.getElementById('sval').value);
 				break;
 			case "Modulo":
-				if (document.getElementById('sval').value == 0)
+				if (document.getElementById('sval').value == "0")
 				{
 					regeant = "It's over 9000!"
 					break;
 				}
-				regeant = document.getElementById('fval').value % document.getElementById('sval').value;
+				regeant = parseInt(document.getElementById('fval').value) % parseInt(document.getElementById('sval').value);
 				break;
 				
 			}
