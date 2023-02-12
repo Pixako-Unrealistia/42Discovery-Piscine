@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+</head>
+
+<h1>To do list.</h1>
+
+<button id ="new">New</button>
+
+<button onclick="lst()">List array(Depreciated)</button>
+
+<div>
+  <code id="ft_list"></code>
+</div>
+
+<script>
+
+var		tempo = [];
+
+$(document).ready(function() {
+	$("#new").click(calcookies);
+	$("#ft_list").click(delcookies);
+})
+
+function	lst() {
+	$(location).attr("href", "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+}
+
+function	writeCookie(value) {
+	var colorn = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+	$("#ft_list").prepend(`<div class="ft_list">${value}</div>`).css({"font-size": "30px", "color": colorn});
+	tempo.push(value);
+}
+
+function	calcookies() {
+	var taskContent = window.prompt("What would it be?");
+	if (taskContent && taskContent.trim())
+		writeCookie(taskContent);
+}
+
+function	delcookies(event) {
+	if (jQuery.inArray(event.target.textContent, tempo) != -1)
+		tempo.splice(jQuery.inArray(event.target.textContent, tempo), 1);
+	$(event.target).remove();
+}
+
+function	save() {
+	localStorage.setItem("cookies", JSON.stringify(tempo));
+}
+
+function	load() {
+	var		carray = JSON.parse(localStorage.getItem("cookies"));
+
+	if (carray)
+		for (var i = 0; i < carray.length; i++)
+			writeCookie(carray[i]);
+}
+
+window.onload = load;
+window.onbeforeunload = save;
+
+
+
+</script>
+
+</html>
