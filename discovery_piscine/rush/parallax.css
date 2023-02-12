@@ -1,0 +1,163 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  color: #777;
+}
+
+.img1, .img2 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.img1 {
+  background-image: url("here.png");
+  min-height: 100%;
+}
+
+.img2 {
+  background-image: url("https://i.gifer.com/6zvA.gif");
+  min-height: 100%;
+}
+
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+
+}
+
+.caption span.border, .lesser span.border {
+  background-color: transparent;
+  text-shadow: 1vw 1vw 2vw black;
+  color: #fff;
+  padding: 1vw;
+  font-size: 3vw;
+  letter-spacing: 1vw;
+}
+
+.lesser {
+  position: top;
+  padding-top: 10vw;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.tmp {
+	font-size: 1.5vw;
+}
+
+h3 {
+  letter-spacing: 1vw;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.seperator {
+	color: #777;
+	background-color:black;
+	text-align:center;
+	padding:5% 10vw;
+	text-align: justify;
+}
+
+.powerlevel {
+	position: relative;
+	width: 100%;
+	top 50%;
+}
+
+p {
+	font-size: 2vw;
+	
+}
+
+d {
+	font-size: 2vw;
+}
+
+d:hover{
+	font-size: 3vw;
+}
+
+.navbar {
+	z-index: 1000; 
+	position: absolute;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 1vw 1.5vw;
+	text-decoration: none;
+	font-size: 2.7vw;
+}
+
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+}
+
+#contact-form {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+#contact-form input, #contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    margin-bottom: 1vw;
+    background: darken(var(--base-color), 15%);
+    border: 0.2vw solid black;
+    color: #fff;
+}
+#contact-form:focus {
+    outline: none;
+    background: darken(var(--base-color), 25%);
+}
+
+
+#contact-form textarea {
+    height: 50vw;
+    resize: none;
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: 2vw;
+    padding: 1vw 4vw;
+    border: none;
+    color: var(--base-color);
+    font-weight: 700;
+    box-shadow: 0 0.1vw 0.5vw rgba(0,0,0,0.12), 0 0.3vw 0.3vw rgba(0,0,0,0.24);
+}
+
+#contact-form button:hover {
+    background-color: grey;
+}
+
+
+
+
+
+

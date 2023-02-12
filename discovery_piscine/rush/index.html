@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="parallax.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="icon" href="hallow.png" type="image/png">
+
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#Education">Skillset</a>
+  <a href="#contact">Contact</a>
+  <a href="https://github.com/Pixako-Unrealistia/Verysadcv">Github</a>
+  <a href="tos.html">TOS</a>
+</div>
+
+
+
+<div class="img1" id="home">
+  <div class="caption">
+  <span class="border">Sorawis "Schongte" Chongterdtoonskul</span>
+  <br>
+  <br>
+  <span class ="lesser">OOP enjoyer, Soon to be burger flipper</span>
+  </div>
+</div>
+
+<div class="seperator">
+	<div id="Education">Education</div>
+	<hr>
+		<d onclick="javascript:location.href='https://home.spsm.ac.th/'">Satit Demostration School, majored in Engineering Artificial Intelligence. 2019-2022</d>
+	<br>
+		<d onclick="javascript:location.href='https://www.kmitl.ac.th/'">KMITL, majors in Software Engineering. 2022-Present</d>
+	<br>
+		<d onclick="javascript:location.href='https://www.42bangkok.com/'">42Bangkok, Cadetship, 2022-Present</d>
+		<br><br>
+	<hr>
+	Skillset
+	<br><br>
+	<img src = "chart.png" class = "powerlevel"></img>
+	<br>
+	<p>Valuing confidence over efficiency, Schongte used to be a python one trick. He would make discord bot, website, game and even tall order like competetive programming with his beloved language.</p>
+	<br>
+	<p>However, as time goes by, Schongte found himself in the hellhole known as 'timeout', even when coding everything in manners that was deemed 'most effecient' by Python 3.7.x standard.</p>
+	<br>
+	<p>Then gradual change began to appear, he would learn to do things in other languages such as JavaScript, where he would use it to make discord bot, webhooks even manipulate excel. Utilise c++ making arduino gadgets. And use c# to make mods for game known as 'terraria'.</p>
+	<br>
+</div>
+
+<div class="img2">
+  <div class="lesser">
+  <span class="border" id ="contact">Contact me</span>
+  
+	<div id="contact-form">
+		<form method="POST" action="https://formspree.io/f/meqnyvbn">
+			<input type="hidden" name="_subject" value="Contact request from personal website" />
+			<input type="email" name="_replyto" placeholder="Your email" class ="tmp" required>
+			<textarea name="message" placeholder="Your message" class ="tmp" required></textarea>
+			<button onclick="termsanagreement()" type="submit" class ="tmp">Send</button>
+		</form>
+	</div>
+</div>
+<div class="lesser" onclick="javascript:location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Copyrighted Schongte, 2022</div>  
+
+</div>
+</div>
+
+<script>
+function termsanagreement() {
+  if(confirm("Would you adhere to our TOS? (Optional)")){
+		$(location).attr("href", "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+  };
+}
+
+
+</script>
+
+
+</body>
+</html>
